@@ -26,8 +26,8 @@ compileJava {
     classpath += configurations.additional
 }
 
-idea {
-    module {
-        scopes.COMPILE.plus += [configurations.additional]
-    }
-}
+//idea {
+//    module {
+//        scopes.COMPILE.plus += [configurations.additional]
+//    }
+//}
