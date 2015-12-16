@@ -32,6 +32,9 @@ task runExample(type: JavaExec) {
     main = "Main"
 }
 
+// plugin conf below would fix the issue, 
+// but that looks redundant considering compileJava conf
+
 //idea {
 //    module {
 //        scopes.COMPILE.plus += [configurations.additional]
