@@ -26,6 +26,12 @@ compileJava {
     classpath += configurations.additional
 }
 
+task runExample(type: JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    classpath += configurations.additional
+    main = "Main"
+}
+
 //idea {
 //    module {
 //        scopes.COMPILE.plus += [configurations.additional]
